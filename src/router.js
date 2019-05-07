@@ -1,4 +1,4 @@
-const fs = require('fs'); // files system to read files
+const fs = require('fs');
 const path = require('path');
 const handlers = require('./handler');
 
@@ -9,6 +9,9 @@ const router = (request, response) => {
 
   } else if (url.indexOf('/public') !== -1) {
     handlers.handlePublic(request, response, url);
+
+  } else if (url === '/img') {
+    handlers.handlerTitle(request, response);
 
   } else {
     response.writeHead(404, { 'Content-Type': 'text/html'});
