@@ -1,0 +1,24 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec",
+    "server": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabeel29/NASA-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabeel29/NASA-Project/issues"
+  },
+  "homepage": "https://github.com/sabeel29/NASA-Project#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "tap-spec": "^5.0.0"
+  }
+}
